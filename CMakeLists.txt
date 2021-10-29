@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.21.0)
 
 project(steamaudio)
 add_library(steamaudio SHARED IMPORTED)
+set_target_properties(steamaudio PROPERTIES IMPORTED_GLOBAL ON)
 
 target_include_directories(steamaudio INTERFACE ${CMAKE_CURRENT_LIST_DIR}/include)
 
